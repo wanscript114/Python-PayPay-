@@ -4,5 +4,5 @@ Pythonの勉強とか全くせず書き始めたのでおかしいとこあっ�
 かなり簡単だったのでgptなどに聞かなくても大体かけましたみんなも自分で書いてみてね
 
 ### コードを書くにあたって使用したモジュール
-https://github.com/suimin-1729/paypaypy/tree/main\
+https://github.com/suimin-1729/paypaypy/tree/main \
 https://github.com/taka-4602/PayPaython-mobile
