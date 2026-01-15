@@ -77,12 +77,12 @@ else:
 
     elif choice == "5":
         input_link = input("送金リンクのURLまたはIDを入力してください: ")
-        link_info=login.link_check(input_link)#URLそのままでもOK
-        print("合計金額" + str(link_info.amount))#リンクの合計金額
-        print("金額のマネーライト分" + str(link_info.money_light))#金額のマネーライト分
-        print("金額のマネー分" + str(link_info.money))#金額のマネー分
-        link_pass = (link_info.has_password)#パスワードがあるなら True
-        link_status = (link_info.status)#PENDING COMPLEATED REJECTED FAILED
+        link_info=login.link_check(input_link)
+        print("合計金額" + str(link_info.amount))
+        print("金額のマネーライト分" + str(link_info.money_light))
+        print("金額のマネー分" + str(link_info.money))
+        link_pass = (link_info.has_password)
+        link_status = (link_info.status)
 
         if link_status != "PENDING":
             print("このリンクは受け取れません。ステータス:" + link_status)
@@ -107,8 +107,8 @@ else:
 
     elif choice == "6":
         link_check = input("請求リンクのURLまたはIDを入力してください: ")
-        get_barcode_info=login.get_barcode_info(link_check)#URLをそのまま投げてPayPay請求リンクから情報を取得する
-        print("請求金額(Noneだった場合値段の指定なし):" + str(get_barcode_info.amount))#請求金額: 請求リンクに金額が指定されていなかったら None になる
+        get_barcode_info=login.get_barcode_info(link_check)
+        print("請求金額(Noneだった場合値段の指定なし):" + str(get_barcode_info.amount))
 
     else:
         print("無効な選択です")
